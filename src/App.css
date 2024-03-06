@@ -9,14 +9,27 @@
   top: 0;
   right: 0;
   font-size: 3em;
-  color: #ececec;
+  color: #BAC1CD;
 }
 .section-1-socials svg{
   margin-right: 10px;
 }
+.section-1-socials svg:hover{
+  color: grey;
+  cursor: pointer;
+}
 .section-1-content{
   height: 100vh;
 }
+/* .portfolio-photo{
+  border-radius: 100%;
+  border: 3px solid #757575;
+  background-image: url("../public/images/me.jpeg");
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+} */
 
 
 .section-2{

@@ -40,15 +40,45 @@ body {
 .section-1-content{
   height: 90vh;
 }
-/* .portfolio-photo{
+.section-1-border-top{
+  background-color: rgb(77, 77, 77);
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  height: 3px;
+  width: 210px;
+}
+.section-1-border-left{
+  background-color: rgb(77, 77, 77);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 170px;
+  width: 3px;
+}
+.portfolio-title-underline{
+  background-color: #4E4C58;
+  height: 3px;
+  width: 100%;
+}
+.portfolio-photo{
   border-radius: 100%;
   border: 3px solid #757575;
   background-image: url("../public/images/me.jpeg");
   background-size: cover;
   background-position: center;
+  margin-top: -140px;
   width: 200px;
   height: 200px;
-} */
+  float: right;
+  /* margin: 0 auto; */
+}
+@media (max-width: 767.98px) {
+  .portfolio-photo{
+    margin: 0 auto;
+    float: none;
+  }
+}
 
 
 .section-2{

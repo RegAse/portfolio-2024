@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { BsGithub, BsLinkedin, BsEnvelope } from "react-icons/bs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import EducationDiagramList from "./components/EducationDiagramList/EducationDiagramList";
 
 function App() {
 	const bg = "../images/firefox_qmfUGQasR8.png";
@@ -51,7 +52,8 @@ function App() {
 				<div>
 					<h2 className="text-center">Education & Projects</h2>
 				</div>
-				<div className="row section-2-content">
+				<EducationDiagramList></EducationDiagramList>
+				{/* <div className="row section-2-content">
 					<div className="col-md-5">
 						<div className="education">
 							<h4>BSc Computer Science - Háskóli Reykjavík</h4>
@@ -65,7 +67,7 @@ function App() {
 							<div className="education-connection-down"></div>
 						</div>
 					</div>
-					<div className="col-md-5 offset-md-2 project-container">
+					<div className="col-md-5 offset-md-2 project-container mt-5">
 						<div
 							className="project"
 							style={{ backgroundImage: "url(" + bg + ")", animationDelay: 1*1.2 + "s"}}
@@ -79,13 +81,6 @@ function App() {
 						<div className="project-connection-left-title"  style={{ animationDelay: 1*1 + "s"}}>GCDD Course</div>
 					</div>
 					<div className="col-md-5">
-						{/* <div className="education">
-					<h3>BSc Computer Science - Háskóli Reykjavík</h3>
-					<p>Learned Machine Learning and Artificical Intelligence as well as C++, Game Engine Design, Web Development, Computer Graphics. Technologies such as sklearn, ASP.NET, Typescript, PostgreSQL, C++, Python, Java, C#, React, React Native.</p>
-					<div className="education-connection">
-
-					</div>
-				</div> */}
 					</div>
 					<div className="col-md-5 offset-md-2 mt-5 project-container">
 						<div
@@ -100,11 +95,8 @@ function App() {
 						<div className="project-connection-left" style={{ animationDelay: 2*1 + "s"}}></div>
 						<div className="project-connection-left-title" style={{ animationDelay: 2*1 + "s"}}>GCDD Course</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
-			<button type="button" className="btn btn-primary">
-				Primary
-			</button>
 		</div>
 	);
 }

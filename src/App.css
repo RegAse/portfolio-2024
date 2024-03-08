@@ -38,7 +38,7 @@ body {
   filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.815));
 }
 .section-1-content{
-  height: 100vh;
+  height: 90vh;
 }
 /* .portfolio-photo{
   border-radius: 100%;
@@ -72,7 +72,7 @@ body {
   padding: 0;
 }
 .project{
-  height: 300px;
+  height: 250px;
   /* background-color: red; */
   background-size: cover;
   background-position: center;
@@ -107,7 +107,7 @@ body {
 }
 .education-connection-down{
   position: absolute;
-  right: -120px;
+  right: -110px;
   top: 50%;
   background-color: rgb(138, 138, 138);
   width: 5px;
@@ -120,7 +120,7 @@ body {
 }
 .project-connection-left{
   position: absolute;
-  left: -115px;
+  left: -125px;
   top: 50%;
   background-color: rgb(138, 138, 138);
   /* width: 125px; */
@@ -134,7 +134,7 @@ body {
 }
 .project-connection-left-title{
   position: absolute;
-  left: -100px;
+  left: -110px;
   font-size: 0.8em;
   font-weight: bold;
   top: 40%;
@@ -154,8 +154,8 @@ body {
     right: 0;
   }
   to {
-    width: 120px;
-    right: -120px;
+    width: 110px;
+    right: -110px;
     border-right: 0px solid rgb(255, 255, 255);
   }
 }
@@ -182,7 +182,7 @@ body {
     background-color: rgba(156, 156, 156, 0.425);
   } */
   100% {
-    width: 115px;
+    width: 125px;
     border-right: 0px solid rgb(255, 255, 255);
     background-color: rgb(138, 138, 138);
     /* left: -125px; */

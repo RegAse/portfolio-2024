@@ -3,6 +3,7 @@ export interface Project {
     title: string,
     description: string;
     cover: string;
+    course: string;
 }
 
 export interface Award {

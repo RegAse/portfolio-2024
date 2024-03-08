@@ -2,21 +2,30 @@ export const data = {
     education: [
         {
             id: 0,
-            title: "BSc Computser Science - Háskóli Reykjavík",
+            title: "B.Sc. Computer Science - Háskóli Reykjavík",
             description: "Learned Machine Learning and Artificical Intelligence as well as C++, Game Engine Design, Web Development, Computer Graphics. Technologies such as sklearn, ASP.NET, Typescript, PostgreSQL, C++, Python, Java, C#, React, React Native.",
             projects: [
                 {
                     id: 0,
                     title: "Zen Juggle",
                     description: "A game I made in a game development course",
-                    cover: "../images/firefox_qmfUGQasR8.png"
+                    cover: "../images/firefox_qmfUGQasR8.png",
+                    course: "GCDD Course"
                 },
                 {
                     id: 1,
                     title: "Morns",
                     description: "A game I made with a group in a game development course",
-                    cover: "../images/Unity_RGfhouoolA.png"
-                }
+                    cover: "../images/Unity_RGfhouoolA.png",
+                    course: "GCDD Course"
+                },
+                {
+                    id: 2,
+                    title: "Music Visualizer",
+                    description: "A music visualizer made in javascript",
+                    cover: "../images/firefox_qB9V85shYV.png",
+                    course: "Personal Project"
+                },
             ]
         },
         {

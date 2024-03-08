@@ -5,9 +5,7 @@ import { data } from "../../data/data";
 import EducationDiagramListItemProject from "./EducationDiagramListItemProject/EducationDiagramListItemProject";
 
 function EducationDiagramList() {
-    const bg = "../images/firefox_qmfUGQasR8.png";
-    const bg2 = "../images/Unity_RGfhouoolA.png";
-
+    
     useEffect(() => {
         const startAnim = setTimeout(() => {
             console.log("DELAYED");
@@ -31,6 +29,9 @@ function EducationDiagramList() {
                     {education.projects?.map((project) => (
                         <EducationDiagramListItemProject project={project}></EducationDiagramListItemProject>
                     ))}
+                    <div className="col-md-5">
+
+                    </div>
                 </React.Fragment>
             ))}
         </div>

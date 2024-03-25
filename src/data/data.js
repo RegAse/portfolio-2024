@@ -27,7 +27,7 @@ export const data = {
                     id: 2,
                     title: "Music Visualizer",
                     description: "A music visualizer made in javascript",
-                    cover: "../images/firefox_qB9V85shYV.png",
+                    cover: "./images/firefox_qB9V85shYV.png",
                     course: "Personal Project",
                     video: "./videos/music-preview.mp4",
                     link: "https://gudmundur-music-player-visualizer.netlify.app/",

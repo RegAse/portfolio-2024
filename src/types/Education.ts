@@ -4,6 +4,8 @@ export interface Project {
     description: string;
     cover: string;
     course: string;
+    video: string;
+    link: string;
 }
 
 export interface Award {
@@ -11,9 +13,18 @@ export interface Award {
     title: string
 }
 
+export interface Course {
+    id: number,
+    name: string;
+    description: string;
+    highlight?: boolean;
+}
+
 export interface Education {
     id: number;
     title: string;
     description: string;
     projects: Project[];
+    awards: Award[];
+    courses: Course[];
 }

@@ -7,10 +7,14 @@
   src: url(./fonts/Lato-Regular.ttf);
 }
 
+a{
+  color: white;
+}
+
 body {
   font-family: "Lato";
-  background-image: url("../public/images/gradient-background-1.png");
-
+  background-color: #131D27;
+  /* background-image: url("../public/images/gradient-background-1.png"); */
   /* font-weight: 300; */
 }
 
@@ -25,6 +29,9 @@ body {
   top: 0;
   right: 0;
   font-size: 3em;
+
+}
+.section-1-socials a{
   color: #BAC1CD;
 }
 .section-1-socials svg{
@@ -91,19 +98,13 @@ body {
 .section-2-content{
   margin-top: 6em;
 }
-
-.education{
-  background-color: rgba(163, 163, 163, 0.089);
-  position: relative;
-  padding: 2em;
-}
 .project-container{
   position: relative;
   padding: 0;
 }
 .project{
   height: 250px;
-  /* background-color: red; */
+  background-color: red;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -114,13 +115,34 @@ body {
   animation-fill-mode: forwards;
   opacity: 0;
 }
+.project-video-container{
+  width: 100%;
+  height: 100%;
+}
+.project-video-container video{
+  height: 100%;
+}
+.project-video{
+  /* display: none; */
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+.project:hover .project-video{
+  display: block;
+  opacity: 1;
+  /* cursor: pointer; */
+}
+.project:hover .project-info{
+  opacity: 0;
+}
 .project-info{
   background-Image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.589));
-  backdrop-filter: blur(1px);
+  /* backdrop-filter: blur(1px); */
   padding: 1em;
   position: absolute;
   width: 100%;
   bottom: 0;
+  transition: 2s;
 }
 
 .education-connection-right{
@@ -153,7 +175,7 @@ body {
   left: -125px;
   top: 50%;
   background-color: rgb(138, 138, 138);
-  /* width: 125px; */
+  /* width: 150px !important; */
   height: 5px;
   animation-name: example2;
   animation-delay: 1s;
@@ -201,6 +223,41 @@ body {
   }
 }
 
+@media (max-width: 1399.98px) {
+  .project-connection-left{
+    left: -95px !important;
+  }
+}
+@media (max-width: 1199.98px) {
+  .project-connection-left{
+    left: -65px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .project-connection-left{
+    left: -25px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .project-connection-left{
+    /* left: -65px !important; */
+    display: none;
+  }
+  .education-connection-right{
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .project-connection-left{
+    /* left: -65px !important; */
+    display: none;
+  }
+  .education-connection-right{
+    display: none;
+  }
+}
+
+
 @keyframes example2 {
   0% {
     width: 0px;
@@ -226,4 +283,19 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(30px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadein{
+  animation-name: fadeInAnimation;
+  animation-duration: 2s;
 }

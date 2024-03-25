@@ -2,7 +2,7 @@ export const data = {
     education: [
         {
             id: 0,
-            title: "B.Sc. Computer Science - Háskóli Reykjavík",
+            title: "B.Sc. Computer Science - Háskóli Reykjavík (Will Graduate June 2024)",
             description: "Learned Machine Learning and Artificical Intelligence as well as C++, Game Engine Design, Web Development, Computer Graphics. Technologies such as sklearn, ASP.NET, Typescript, PostgreSQL, C++, Python, Java, C#, React, React Native.",
             projects: [
                 {

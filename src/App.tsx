@@ -29,21 +29,21 @@ function App() {
 							{/* <button className="btn btn-main mt-5 ms-4">My Education</button> */}
 						</div>
 					</div>
-					<div className="col-sm-12 col-md-6 col-lg-4">
+					<div className="col-sm-12 col-md-6 col-lg-5">
 						<img className="img-fluid landing-page-avatar" src="images/me2-back.png" alt="Failed" />
 					</div>
 				</div>
-				<div>
-					<h2 className="text-center">Projects</h2>
-					<p className="text-center">Projects here</p>
-				</div>
-
+				
 				{/* Socials */}
 				<div className="section-1-socials">
 					<a href="https://github.com/RegAse" target="_"><BsGithub /></a>
 					<a href="https://www.linkedin.com/in/gudmundur-axel-gudrunarson/" target="_"><BsLinkedin /></a>
 					<a href="mailto:gudmundur210@gmail.com" target="_"><BsEnvelope /></a>
 				</div>
+			</div>
+			<div className="container">
+				<h2 className="text-center">Projects</h2>
+				<ProjectList></ProjectList>
 			</div>
 			{/* <div className="col-md-12 col-sm-12">
 				<div className="landing-page-main d-flex align-items-center justify-content-center vh-100">

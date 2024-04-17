@@ -112,5 +112,34 @@ export const data = {
  
             ]
         }
+    ],
+    projects: [
+        {
+            id: 0,
+            title: "Zen Juggle",
+            description: "A game I made in a game development course",
+            cover: "./images/firefox_qmfUGQasR8.png",
+            course: "GCDD Course",
+            video: "./videos/zen-juggle-preview.mp4",
+            link: "https://gudmunduraxel.itch.io/zen-juggle",
+        },
+        {
+            id: 1,
+            title: "Morns",
+            description: "A game I made with a group in a game development course",
+            cover: "./images/Unity_RGfhouoolA.png",
+            course: "GCDD Course",
+            video: "./videos/morns-preview.mp4",
+            link: "https://gudmunduraxel.itch.io/morns",
+        },
+        {
+            id: 2,
+            title: "Music Visualizer",
+            description: "A music visualizer made in javascript",
+            cover: "./images/firefox_qB9V85shYV.png",
+            course: "Personal Project",
+            video: "./videos/music-preview.mp4",
+            link: "https://gudmundur-music-player-visualizer.netlify.app/",
+        },
     ]
 }

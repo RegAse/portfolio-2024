@@ -1,7 +1,9 @@
-/* @font-face {
-  font-family: 'Lato';
-  src: local('Lato'), url(../public/fonts/Lato-Regular.ttf) format('ttf');
-} */
+body {
+  font-family: "Lato";
+  background-color: #131D27;
+  color: white;
+}
+
 @font-face {
   font-family: "Lato";
   src: url(./fonts/Lato-Regular.ttf);
@@ -11,11 +13,8 @@ a{
   color: white;
 }
 
-body {
-  font-family: "Lato";
-  background-color: #131D27;
-  /* background-image: url("../public/images/gradient-background-1.png"); */
-  /* font-weight: 300; */
+.summary{
+  font-size: 1.1em;
 }
 
 .section-1{
@@ -23,26 +22,6 @@ body {
   /* background-image: url("../public/images/gradient-background-1.png"); */
   /* height: 100vh; */
   color: white;
-}
-.section-1-socials{
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 3em;
-
-}
-.section-1-socials a{
-  color: #BAC1CD;
-}
-.section-1-socials svg{
-  margin-right: 10px;
-  transition: 0.4s;
-}
-.section-1-socials svg:hover{
-  color: grey;
-  transform: rotate(20deg);
-  cursor: pointer;
-  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.815));
 }
 .section-1-content{
   height: 90vh;
@@ -298,4 +277,74 @@ body {
 .fadein{
   animation-name: fadeInAnimation;
   animation-duration: 2s;
+}
+
+
+/* Projects List */
+
+
+
+/* Landing Page */
+
+body{
+  background-image: url("../public/images/gradient-background-1.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-position: center;
+}
+
+h1{
+  font-size: 3.5em;
+}
+
+.subtitle{
+  font-size: 1.5em;
+  color: rgb(153, 153, 153);
+}
+
+.landing-page-main{
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+.landing-page-actions{
+  margin-top: 200px;
+}
+/* .landing-page-avatar{
+  position: absolute;
+} */
+
+.btn-main{
+  border-radius: 1px;
+  padding: 0.5em 3em;
+  font-size: 1.3em;
+  background-color: #394166;
+  color: white;
+  box-shadow: 10px 10px #2B2F45;
+  transition: 0.5s;
+}
+.btn-main:hover{
+  background-color: #4a5480;
+  box-shadow: 4px 4px #2B2F45;
+
+}
+
+.section-1-socials{
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 3em;
+
+}
+.section-1-socials a{
+  color: #BAC1CD;
+}
+.section-1-socials svg{
+  margin-right: 10px;
+  transition: 0.4s;
+}
+.section-1-socials svg:hover{
+  color: grey;
+  transform: rotate(20deg);
+  cursor: pointer;
+  filter: drop-shadow(3px 5px 2px rgba(0, 0, 0, 0.815));
 }

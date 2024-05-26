@@ -12,7 +12,7 @@ function ProjectList() {
                         <div className="project-cover" style={{ backgroundImage: "url(" + p.cover + ")" }}></div>
                         <div className="project-info">
                             <h2>{p.title}</h2>
-                            <p className="fs-6">{p.description}</p>
+                            <p className="project-desc">{p.description}</p>
                             <br></br>
                             <br></br>
                             <br></br>

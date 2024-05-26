@@ -339,6 +339,10 @@ body{
 .project-info{
   padding: 0em 1em 1em 1em;
 }
+.project-desc{
+  font-size: 0.9em;
+  color: #c6c6c6;
+}
 
 .tech{
   font-size: 4em;

@@ -274,7 +274,7 @@ body{
 
 .btn-main{
   border-radius: 1px;
-  padding: 0.5em 3em;
+  padding: 0.5em 2em;
   font-size: 1.3em;
   background-color: #394166;
   color: white;
@@ -348,6 +348,10 @@ body{
   padding: 0.2em 1em;
   background-color: #303A55;
   margin-right: 0.5em;
+}
+
+.projects-container{
+  margin-top: 10em;
 }
 
 @media (max-width: 767.98px) {

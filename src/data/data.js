@@ -2,7 +2,7 @@ export const data = {
     education: [
         {
             id: 0,
-            title: "B.Sc. Computer Science - Háskóli Reykjavík (Will Graduate June 2024)",
+            title: "B.Sc. Computer Science - Háskóli Reykjavík (graduating June 2024)",
             description: "Learned Machine Learning and Artificical Intelligence as well as C++, Game Engine Design, Web Development, Computer Graphics. Technologies such as sklearn, ASP.NET, Typescript, PostgreSQL, C++, Python, Java, C#, React, React Native.",
             projects: [
                 {
@@ -33,6 +33,16 @@ export const data = {
                     course: "Personal Project",
                     video: "./videos/music-preview.mp4",
                     link: "https://gudmundur-music-player-visualizer.netlify.app/",
+                    tags: ["React"],
+                },
+                {
+                    id: 3,
+                    title: "TV Show Tracker",
+                    description: "A TV Show tracker to keep track of what you are watching",
+                    cover: "./images/firefox_vMtvTlRYUm.jpg",
+                    course: "VEF3B3U",
+                    video: "",
+                    link: "#",
                     tags: ["React"],
                 },
             ],
@@ -121,6 +131,26 @@ export const data = {
     projects: [
         {
             id: 1,
+            title: "AratiJS Javascript Framework",
+            description: "In high school I created a small Javascript framework for a final project in a Web Development Course. It can render data in a similar way React/Angular does.",
+            cover: "./images/firefox_vMtvTlRYUm.jpg",
+            course: "VEF3B3U",
+            video: "",
+            link: "#",
+            tags: ["JavaScript", "AratiJS"],
+        },
+        {
+            id: 2,
+            title: "Music Visualizer",
+            description: "A music visualizer made in javascript",
+            cover: "./images/firefox_qB9V85shYV.png",
+            course: "Personal Project",
+            video: "./videos/music-preview.mp4",
+            link: "https://gudmundur-music-player-visualizer.netlify.app/",
+            tags: ["Javascript", "React", "HTML Canvas",],
+        },
+        {
+            id: 3,
             title: "Zen Juggle",
             description: "A game I made in a game development course",
             cover: "./images/firefox_qmfUGQasR8.png",
@@ -130,7 +160,7 @@ export const data = {
             tags: ["C#", "Unity"],
         },
         {
-            id: 2,
+            id: 4,
             title: "Morns",
             description: "A game I made with a group in a game development course",
             cover: "./images/Unity_RGfhouoolA.png",
@@ -138,16 +168,6 @@ export const data = {
             video: "./videos/morns-preview.mp4",
             link: "https://gudmunduraxel.itch.io/morns",
             tags: ["C#", "Unity"],
-        },
-        {
-            id: 3,
-            title: "Music Visualizer",
-            description: "A music visualizer made in javascript",
-            cover: "./images/firefox_qB9V85shYV.png",
-            course: "Personal Project",
-            video: "./videos/music-preview.mp4",
-            link: "https://gudmundur-music-player-visualizer.netlify.app/",
-            tags: ["Javascript", "React", "HTML Canvas",],
         },
     ],
     technologies: [

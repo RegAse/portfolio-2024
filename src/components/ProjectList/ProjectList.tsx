@@ -1,5 +1,6 @@
 import "./ProjectList.css";
 import { data } from "../../data/data";
+import { DiReact } from "react-icons/di";
 
 function ProjectList() {
 
@@ -12,9 +13,14 @@ function ProjectList() {
                         <div className="project-info">
                             <h2>{p.title}</h2>
                             <p>{p.description}</p>
+                            <br></br>
+                            <br></br>
+                            <br></br>
+                            <br></br>
                             
-                            <p>Show Tags here....</p>
-                            <p>Show Tags here....</p>
+                            {p.tags.map((t) => (
+                                <span className="tag">{t}</span>
+                            ))}
                         </div>
                     </div>
                 </div>

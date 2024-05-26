@@ -75,7 +75,7 @@ a{
   min-height: 2000px;
 }
 .section-2-content{
-  margin-top: 6em;
+  margin-top: 4em;
 }
 .project-container{
   position: relative;
@@ -248,15 +248,16 @@ body{
   background-image: url("../public/images/gradient-background-1.png");
   background-repeat: repeat-y;
   background-size: contain;
+  overflow-x: hidden;
   /* background-position: center; */
 }
 
-h1{
+/* h1{
   font-size: 4em;
-}
+} */
 
 .subtitle{
-  font-size: 1.7em;
+  /* font-size: 1.7em; */
   color: rgb(153, 153, 153);
 }
 
@@ -308,14 +309,20 @@ h1{
 }
 
 /* Projects */
+.projects-desc{
+  color: rgb(201, 201, 201);
+  font-size: 0.9em;
+}
 
 .project{
   /* position: relative; */
-  background-color: rgba(33, 36, 46, 0.79);
-  margin-top: 100px;
+  background-color: rgba(33, 36, 46, 0.55);
+  margin-top: 10px;
+  margin-bottom: 80px;
   /* width: 500px; */
   position: relative;
-  box-shadow: 6px 6px 8px #0000004d;
+  box-shadow: 0px 0px 14px #0000004d;
+  border-radius: 1px;
 }
 
 .project-cover{
@@ -326,9 +333,48 @@ h1{
   background-position: center;
   background-size: cover;
   height: 300px;
-  box-shadow: 10px 10px 20px #0000004d;
+  box-shadow: 0px 0px 20px #00000062;
   margin-right: 60px;
 }
 .project-info{
-  padding: 1em;
+  padding: 0em 1em 1em 1em;
+}
+
+.tech{
+  font-size: 4em;
+}
+
+.tag {
+  padding: 0.2em 1em;
+  background-color: #303A55;
+  margin-right: 0.5em;
+}
+
+@media (max-width: 767.98px) {
+  .avatar-container{
+    margin-top: 6em;
+  }
+
+  .landing-page-actions{
+    margin-top: 3em;
+  }
+  .projects-container{
+    margin-top: 2em;
+  }
+}
+@media (max-width: 575.98px) {
+  body{
+    background-size: cover;
+    background-position: center;
+  }
+  .avatar-container{
+    margin-top: 0em;
+  }
+
+  .landing-page-actions{
+    margin-top: 3em;
+  }
+  .projects-container{
+    margin-top: 2em;
+  }
 }

@@ -6,6 +6,7 @@ export interface Project {
     course: string;
     video: string;
     link: string;
+    tags: string[];
 }
 
 export interface Award {

@@ -13,6 +13,7 @@ export const data = {
                     course: "GCDD Course",
                     video: "./videos/zen-juggle-preview.mp4",
                     link: "https://gudmunduraxel.itch.io/zen-juggle",
+                    tags: ["React"],
                 },
                 {
                     id: 1,
@@ -22,6 +23,7 @@ export const data = {
                     course: "GCDD Course",
                     video: "./videos/morns-preview.mp4",
                     link: "https://gudmunduraxel.itch.io/morns",
+                    tags: ["React"],
                 },
                 {
                     id: 2,
@@ -31,6 +33,7 @@ export const data = {
                     course: "Personal Project",
                     video: "./videos/music-preview.mp4",
                     link: "https://gudmundur-music-player-visualizer.netlify.app/",
+                    tags: ["React"],
                 },
             ],
             awards: [],
@@ -76,6 +79,7 @@ export const data = {
                     course: "VEF3B3U",
                     video: "",
                     link: "#",
+                    tags: ["React"],
                 },
                 {
                     id: 1,
@@ -85,6 +89,7 @@ export const data = {
                     course: "VEF3A3U",
                     video: "",
                     link: "#",
+                    tags: ["React"],
                 }
             ],
             awards: [{id: 0, title: "Graduated with an award for best success in computer classes"}],
@@ -115,31 +120,80 @@ export const data = {
     ],
     projects: [
         {
-            id: 0,
+            id: 1,
             title: "Zen Juggle",
             description: "A game I made in a game development course",
             cover: "./images/firefox_qmfUGQasR8.png",
             course: "GCDD Course",
             video: "./videos/zen-juggle-preview.mp4",
             link: "https://gudmunduraxel.itch.io/zen-juggle",
+            tags: ["C#", "Unity"],
         },
         {
-            id: 1,
+            id: 2,
             title: "Morns",
             description: "A game I made with a group in a game development course",
             cover: "./images/Unity_RGfhouoolA.png",
             course: "GCDD Course",
             video: "./videos/morns-preview.mp4",
             link: "https://gudmunduraxel.itch.io/morns",
+            tags: ["C#", "Unity"],
         },
         {
-            id: 2,
+            id: 3,
             title: "Music Visualizer",
             description: "A music visualizer made in javascript",
             cover: "./images/firefox_qB9V85shYV.png",
             course: "Personal Project",
             video: "./videos/music-preview.mp4",
             link: "https://gudmundur-music-player-visualizer.netlify.app/",
+            tags: ["Javascript", "React", "HTML Canvas",],
         },
+    ],
+    technologies: [
+        {
+            id: 1,
+            title: "React"
+        },
+        {
+            id: 2,
+            title: "Next.js"
+        },
+        {
+            id: 3,
+            title: "Laravel"
+        },
+        {
+            id: 4,
+            title: "PHP"
+        },
+        {
+            id: 5,
+            title: "Javascript"
+        },
+        {
+            id: 6,
+            title: "MYSQL"
+        },
+        {
+            id: 7,
+            title: "PostgreSQL"
+        },
+        {
+            id: 8,
+            title: "C#"
+        },
+        {
+            id: 9,
+            title: "C++"
+        },
+        {
+            id: 10,
+            title: "Unreal Engine"
+        },
+        {
+            id: 11,
+            title: "Unity"
+        }
     ]
 }

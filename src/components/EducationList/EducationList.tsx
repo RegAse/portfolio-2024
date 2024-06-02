@@ -16,7 +16,7 @@ function EducationList() {
     return (
         <div className="row section-2-content">
             {data.education.map((education) => (
-                <EducationListItem education={education}></EducationListItem>
+                <EducationListItem key={education.id} education={education}></EducationListItem>
             ))}
         </div>
     );

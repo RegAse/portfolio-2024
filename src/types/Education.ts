@@ -7,6 +7,11 @@ export interface Project {
     video: string;
     link: string;
     tags: string[];
+    images?: ProjectImage[];
+}
+
+export interface ProjectImage {
+    source: string;
 }
 
 export interface Award {
@@ -25,6 +30,7 @@ export interface Education {
     id: number;
     title: string;
     description: string;
+    tags: string[];
     projects: Project[];
     awards: Award[];
     courses: Course[];

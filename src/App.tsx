@@ -3,7 +3,7 @@ import { BsGithub, BsLinkedin, BsEnvelope } from "react-icons/bs";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import EducationDiagramList from "./components/EducationDiagramList/EducationDiagramList";
-import ProjectList from "./components/ProjectList/ProjectList";
+import ProjectList from "./components/Project/ProjectList/ProjectList";
 import EducationList from "./components/EducationList/EducationList";
 
 function App() {
@@ -20,6 +20,9 @@ function App() {
 
 	return (
 		<div className="App">
+			<div className="main-background">
+
+			</div>
 			{/* First Fullscreen Page */}
 			<div className="container-fluid landing-page-1 min-vh-100">
 				<div className="landing-page-main d-flex flex-column-reverse flex-md-row align-items-center justify-content-center min-vh-100">

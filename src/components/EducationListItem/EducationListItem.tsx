@@ -17,16 +17,23 @@ function EducationListItem({ education }: EducationListItemProps) {
 
     return (
         <React.Fragment>
-                <div className="col-md-6">
+                <div className="col-md-6 mb-5">
                     <div className="education">
                         <div className="education-content">
-                            <h4><BsFillMortarboardFill className="education-icon" /> {education.title}</h4>
+                            <h3><BsFillMortarboardFill className="education-icon" /> {education.title}</h3>
                             {education.awards?.map((award) => (
-                                <p className="education-award"><BsAward /> {award.title}</p>
+                                <p key={award.id} className="education-award"><BsAward /> {award.title}</p>
                             ))}
-                            <p>
+                            <p className="education-description">
                                 {education.description}
                             </p>
+                            {/* education tags */}
+                            <div className="education-tags">
+                                <h6 className="fw-bold">Technologies learned</h6>
+                                {education.tags.map((t, index) => (
+                                    <div key={index} className="tag">{t}</div>
+                                ))}
+                            </div>
                         </div>
                         <div className="education-show-detail" onClick={handleClick}>
                             <p>{showDetail ? 'Hide' : 'Show'} Detailed Information</p>
@@ -43,7 +50,7 @@ function EducationListItem({ education }: EducationListItemProps) {
                                 </thead>
                                 <tbody>
                                     {education.courses?.map((course) => (
-                                        <tr>
+                                        <tr key={course.id}>
                                             <td>{course.name}</td>
                                             <td>{course.description}</td>
                                             {/* <td>C#, Java</td> */}

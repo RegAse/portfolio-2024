@@ -244,11 +244,36 @@ a{
 
 /* Landing Page */
 
-body{
+.main-background{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
   background-image: url("../public/images/gradient-background-1.png");
-  background-repeat: repeat-y;
+  z-index: -1;
+  animation-name: mainBackgroundOpacityAnimation;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  opacity: 1;
+}
+
+@keyframes mainBackgroundOpacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body{
+  /* background-image: url("../public/images/gradient-background-1.png"); */
+  /* background-repeat: repeat-y; */
   background-size: contain;
+  background-attachment: fixed;
   overflow-x: hidden;
+  /* transition: background-image 300ms ease-in 200ms; */
   /* background-position: center; */
 }
 
@@ -352,6 +377,9 @@ body{
   padding: 0.2em 1em;
   background-color: #303A55;
   margin-right: 0.5em;
+  margin-top: 0.5em;
+  display: inline-block;
+  box-shadow: 2px 2px #1f165c42;
 }
 
 .projects-container{

@@ -10,7 +10,10 @@
 
 .education-award{
     color: #F39E6F;
-    font-weight: bold;
+    /* font-weight: bold; */
+}
+.education-description{
+    color: rgb(212, 212, 212);
 }
 .education-icon{
     font-size: 1em;
@@ -26,9 +29,6 @@
     background-color: #9191916e;
     cursor: pointer;
 }
-/* .education-show-detail:hover + div{
-    display: block;
-} */
 .education-show-detail p{
     font-size: 1em;
     padding: 0.3em;

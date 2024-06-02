@@ -45,7 +45,7 @@ function App() {
 						</div>
 					</div>
 					<div className="col-sm-12 col-md-6 col-lg-5 avatar-container">
-						<img className="img-fluid landing-page-avatar" src="images/profile-picture-4.png" alt="Failed" />
+						<img className="img-fluid landing-page-avatar fadein" src="images/profile-picture-4.png" alt="Failed" />
 					</div>
 				</div>
 				

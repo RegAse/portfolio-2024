@@ -36,12 +36,12 @@ function ProjectListItem({ project }: ProjectListItemProps) {
                         <br></br>
                         <br></br>
                         <br></br>
-                        <button onClick={nextImage}>
+                        {/* <button onClick={nextImage}>
                             Next Image
                         </button>
                         <button onClick={previousImage}>
                             Prev Image
-                        </button>
+                        </button> */}
 
                         {project.tags.map((t, index) => (
                             <span key={index} className="tag">{t}</span>

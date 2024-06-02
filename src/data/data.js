@@ -138,6 +138,10 @@ export const data = {
             cover: "./images/firefox_vMtvTlRYUm.jpg",
             course: "VEF3B3U",
             video: "",
+            images: [
+                { source: "./images/firefox_vMtvTlRYUm.jpg" },
+                { source: "./images/firefox_vMtvTlRYUm.jpg" }
+            ],
             link: "#",
             tags: ["JavaScript", "AratiJS"],
         },
@@ -148,6 +152,10 @@ export const data = {
             cover: "./images/firefox_qB9V85shYV.png",
             course: "Personal Project",
             video: "./videos/music-preview.mp4",
+            images: [
+                { source: "./images/firefox_qB9V85shYV.png" },
+                { source: "./images/firefox_vMtvTlRYUm.jpg" }
+            ],
             link: "https://gudmundur-music-player-visualizer.netlify.app/",
             tags: ["Javascript", "React", "HTML Canvas",],
         },
@@ -172,6 +180,10 @@ export const data = {
             cover: "./images/Unity_RGfhouoolA.png",
             course: "GCDD Course",
             video: "./videos/morns-preview.mp4",
+            images: [
+                { source: "./images/Unity_RGfhouoolA.png" },
+                { source: "./images/firefox_vMtvTlRYUm.jpg" }
+            ],
             link: "https://gudmunduraxel.itch.io/morns",
             tags: ["C#", "Unity"],
         },

@@ -1,0 +1,87 @@
+.projects-desc {
+    color: rgb(201, 201, 201);
+    font-size: 0.9em;
+}
+
+.project {
+    background-color: rgba(33, 36, 46, 0.55);
+    margin-top: 10px;
+    margin-bottom: 80px;
+    position: relative;
+    box-shadow: 0px 0px 14px #0000004d;
+    border-radius: 1px;
+}
+
+.project-cover {
+    position: relative;
+    left: -20px;
+    top: -20px;
+    width: 90%;
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    box-shadow: 0px 0px 20px #00000062;
+    margin-right: 60px;
+}
+
+.project-cover:hover > video:first-child{
+    opacity: 1;
+    /* display: block; */
+}
+
+.project-video{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.815);
+    backdrop-filter: blur(20px);
+    /* display: none; */
+    opacity: 0;
+    transition: all 1s;
+}
+
+.project-info {
+    padding: 0em 1em 1em 1em;
+}
+
+.project-desc {
+    font-size: 0.9em;
+    color: #c6c6c6;
+}
+
+.project-cover-overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.btn-slide{
+    /* background-color: rgba(255, 255, 255, 0.185); */
+    padding: 0.5em;
+    border-radius: 0;
+    color: white;
+    transition: all 0.3s;
+}
+.btn-slide:hover{
+    background-color: rgba(145, 145, 145, 0.205);
+    color: rgba(255, 255, 255, 0.205);
+    cursor: pointer;
+}
+
+.slide-location{
+    /* color: rgba(66, 66, 66, 0.4); */
+    margin-left: 0.3em;
+    font-size: 0.7em;
+    /* border: 1px solid rgb(165, 165, 165); */
+    background-color: rgba(114, 114, 114, 0.4);
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.slide-location.active{
+    /* color: rgba(199, 199, 199, 0.4) !important; */
+    background-color: rgba(199, 199, 199, 0.4) !important;
+
+}

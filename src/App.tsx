@@ -5,6 +5,7 @@ import "./App.css";
 import EducationDiagramList from "./components/EducationDiagramList/EducationDiagramList";
 import ProjectList from "./components/Project/ProjectList/ProjectList";
 import EducationList from "./components/EducationList/EducationList";
+import ProjectDisplay from "./components/Project/ProjectDisplay/ProjectDisplay";
 
 function App() {
 	const bg = "../images/firefox_qmfUGQasR8.png";
@@ -74,6 +75,10 @@ function App() {
 				<p className="projects-desc text-center">Explore the array of projects I have worked on, both
 				<br/>as part of my academic curriculum and personal endeavors.</p>
 				<ProjectList></ProjectList>
+			</div>
+
+			<div>
+				<ProjectDisplay></ProjectDisplay>
 			</div>
 
 			<br/>

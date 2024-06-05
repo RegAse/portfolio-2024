@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { BsAward, BsFillMortarboardFill } from "react-icons/bs";
+import { BsAward, BsChevronLeft, BsChevronRight, BsCircle, BsCircleFill, BsFillMortarboardFill } from "react-icons/bs";
 import { Project, ProjectImage } from "../../../types/Education";
 
 interface ProjectListItemProps {
@@ -11,11 +11,24 @@ function ProjectListItem({ project }: ProjectListItemProps) {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
     function nextImage() {
-        setCurrentImageIndex(currentImageIndex + 1);
+        if(project.images !== undefined && currentImageIndex + 1 >= project.images?.length) {
+            // Wrap around
+            setCurrentImageIndex(0); 
+        }
+        else {
+            setCurrentImageIndex(currentImageIndex + 1);
+        }
     };
 
     function previousImage() {
-        setCurrentImageIndex(currentImageIndex - 1);
+        if(currentImageIndex - 1 < 0 && project.images !== undefined) {
+            // Wrap Around
+            console.log(project.images.length);
+            setCurrentImageIndex(project.images?.length - 1); 
+        }
+        else {
+            setCurrentImageIndex(currentImageIndex - 1);
+        }
     };
 
     return (
@@ -25,7 +38,24 @@ function ProjectListItem({ project }: ProjectListItemProps) {
                     {(project.images) &&
                         <>
                             {/* <img className="img-fluid" src={project.images[currentImageIndex].source} alt="Failed loading" /> */}
-                            <div className="project-cover fadein" style={{ backgroundImage: "url(" + project.images[currentImageIndex].source + ")" }}></div>
+                            <div className="project-cover d-flex justify-content-between align-items-center fadein" style={{ backgroundImage: "url(" + project.images[currentImageIndex].source + ")" }}>
+                                <video className="project-video"  autoPlay muted loop>
+                                    <source src={project.video} type="video/mp4"/>
+                                    Your browser does not support the video tag.
+                                </video>
+                                {/* <button className="btn btn-slide" onClick={previousImage}>
+                                    <BsChevronLeft className="fs-1" />
+                                </button>
+                                <button className="btn btn-slide" onClick={nextImage}>
+                                    <BsChevronRight className="fs-1" />
+                                </button>
+                                <div className="project-cover-overlay">
+                                    {project.images.map((t, index) => (
+                                        <div key={index} className={`slide-location ${currentImageIndex === index ? "active": ""} `}/>
+                                        // <span key={index} className="tag">{index}</span>
+                                    ))}
+                                </div> */}
+                            </div>
                         </>
                     }
                     {/* <div className="project-cover" style={{ backgroundImage: "url(" + project.cover + ")" }}></div> */}
@@ -36,12 +66,6 @@ function ProjectListItem({ project }: ProjectListItemProps) {
                         <br></br>
                         <br></br>
                         <br></br>
-                        {/* <button onClick={nextImage}>
-                            Next Image
-                        </button>
-                        <button onClick={previousImage}>
-                            Prev Image
-                        </button> */}
 
                         {project.tags.map((t, index) => (
                             <span key={index} className="tag">{t}</span>

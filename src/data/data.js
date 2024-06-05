@@ -133,6 +133,36 @@ export const data = {
     projects: [
         {
             id: 1,
+            title: "Music Visualizer",
+            description: "A music visualizer made with React and three.js",
+            cover: "./images/firefox_qB9V85shYV.png",
+            course: "Personal Project",
+            video: "./videos/music-visualizer-video-1-trim.mp4",
+            images: [
+                { source: "./images/music-visualizer-1.png" },
+                { source: "./images/music-visualizer-2.png" },
+                { source: "./images/music-visualizer-3.png" },
+                { source: "./images/music-visualizer-4.png" }
+            ],
+            link: "https://gudmundur-music-player-visualizer.netlify.app/",
+            tags: ["TypeScript", "JavaScript", "React", "Three.js", "React Three Fiber"],
+        },
+        {
+            id: 2,
+            title: "Morns",
+            description: "A video game I made with a group in a game development course",
+            cover: "./images/Unity_RGfhouoolA.png",
+            course: "GCDD Course",
+            video: "./videos/morns-preview.mp4",
+            images: [
+                { source: "./images/qkBPmT4MGw-crop.jpg" },
+                { source: "./images/Unity_RGfhouoolA.png" }
+            ],
+            link: "https://gudmunduraxel.itch.io/morns",
+            tags: ["C#", "Unity"],
+        },
+        {
+            id: 3,
             title: "AratiJS Javascript Framework",
             description: "In high school I created a small Javascript framework for a final project in a Web Development Course. It can render data in a similar way React/Angular does.",
             cover: "./images/firefox_vMtvTlRYUm.jpg",
@@ -146,45 +176,17 @@ export const data = {
             tags: ["JavaScript", "AratiJS"],
         },
         {
-            id: 2,
-            title: "Music Visualizer",
-            description: "A music visualizer made in javascript",
-            cover: "./images/firefox_qB9V85shYV.png",
-            course: "Personal Project",
-            video: "./videos/music-preview.mp4",
-            images: [
-                { source: "./images/firefox_qB9V85shYV.png" },
-                { source: "./images/firefox_vMtvTlRYUm.jpg" }
-            ],
-            link: "https://gudmundur-music-player-visualizer.netlify.app/",
-            tags: ["Javascript", "React", "HTML Canvas",],
-        },
-        {
-            id: 3,
+            id: 4,
             title: "Zen Juggle",
             description: "A game I made in a game development course",
             cover: "./images/firefox_qmfUGQasR8.png",
             course: "GCDD Course",
             video: "./videos/zen-juggle-preview.mp4",
             images: [
-                { source: "./images/firefox_qmfUGQasR8.png" },
-                { source: "./images/firefox_vMtvTlRYUm.jpg" }
+                { source: "./images/ZbL63uTsC8.jpg" },
+                { source: "./images/rIYElmeL8O.jpg" }
             ],
             link: "https://gudmunduraxel.itch.io/zen-juggle",
-            tags: ["C#", "Unity"],
-        },
-        {
-            id: 4,
-            title: "Morns",
-            description: "A game I made with a group in a game development course",
-            cover: "./images/Unity_RGfhouoolA.png",
-            course: "GCDD Course",
-            video: "./videos/morns-preview.mp4",
-            images: [
-                { source: "./images/Unity_RGfhouoolA.png" },
-                { source: "./images/firefox_vMtvTlRYUm.jpg" }
-            ],
-            link: "https://gudmunduraxel.itch.io/morns",
             tags: ["C#", "Unity"],
         },
     ],

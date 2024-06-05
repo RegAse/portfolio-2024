@@ -1,0 +1,68 @@
+.project-display{
+    position: relative;
+    background-color: rgba(54, 54, 54, 0.349);
+    height: 100vh;
+    background-size: cover;
+    /* background-size: contain; */
+    background-position: 50% 0%;
+    /* z-index: -1; */
+}
+
+.project-display-fade{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8995799003195029) 0%, rgba(0,0,0,0.6922969871542367) 23%, rgba(0,0,0,0) 49%); 
+}
+
+.project-display-select-item{
+    padding: 1em;
+}
+
+.project-display-select{
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    /* left: 0; */
+    /* margin-top: 15em; */
+}
+
+.project-display-select-item-cover{
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.63);
+}
+
+.project-display-select-item-overlay{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.63);
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 2px rgba(88, 88, 88, 0.61);
+    transition: all 0.5s;
+}
+
+.project-display-select-item-overlay:hover{
+    cursor: pointer;
+    background-color: rgba(126, 126, 126, 0);
+    box-shadow: 0px 0px 3px rgba(88, 88, 88, 0.61);
+}
+
+/* The project currently being viewed */
+.project-display-select-item-overlay.active{
+    background-color: rgba(126, 126, 126, 0);
+    box-shadow: 0px 0px 3px rgba(88, 88, 88, 0.61);
+}
+.project-display-select-item-overlay-bottom{
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    text-shadow: 3px 3px 9px rgba(0, 0, 0, 1);
+}
+
+.project-display-content{
+    margin-top: 10em;
+    text-shadow: 3px 3px 9px rgba(0, 0, 0, 1);
+}

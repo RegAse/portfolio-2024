@@ -7,7 +7,9 @@
     padding: 1.5em;
     min-height: 230px;
 }
-
+.education-tags{
+    margin-top: 2em;
+}
 .education-award{
     color: #F39E6F;
     /* font-weight: bold; */

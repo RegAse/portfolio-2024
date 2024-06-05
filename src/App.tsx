@@ -78,7 +78,7 @@ function App() {
 			</div>
 
 			<div>
-				<ProjectDisplay></ProjectDisplay>
+				{/* <ProjectDisplay></ProjectDisplay> */}
 			</div>
 
 			<br/>

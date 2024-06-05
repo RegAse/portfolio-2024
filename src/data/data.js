@@ -139,12 +139,12 @@ export const data = {
             course: "Personal Project",
             video: "./videos/music-visualizer-video-1-trim.mp4",
             images: [
-                { source: "./images/music-visualizer-1.png" },
-                { source: "./images/music-visualizer-2.png" },
                 { source: "./images/music-visualizer-3.png" },
-                { source: "./images/music-visualizer-4.png" }
+                { source: "./images/music-visualizer-2.png" },
+                { source: "./images/music-visualizer-4.png" },
+                { source: "./images/music-visualizer-1.png" }
             ],
-            link: "https://gudmundur-music-player-visualizer.netlify.app/",
+            link: "https://gudmundur-music-player-visualizer-v2.netlify.app/",
             tags: ["TypeScript", "JavaScript", "React", "Three.js", "React Three Fiber"],
         },
         {
@@ -172,7 +172,7 @@ export const data = {
                 { source: "./images/firefox_vMtvTlRYUm.jpg" },
                 { source: "./images/firefox_vMtvTlRYUm.jpg" }
             ],
-            link: "#",
+            link: "",
             tags: ["JavaScript", "AratiJS"],
         },
         {

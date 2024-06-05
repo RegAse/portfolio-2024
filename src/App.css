@@ -306,10 +306,26 @@ body{
   box-shadow: 10px 10px #2B2F45;
   transition: 0.5s;
 }
+
 .btn-main:hover{
   background-color: #4a5480;
   box-shadow: 4px 4px #2B2F45;
+}
 
+.btn-secondary{
+  border-radius: 1px;
+  padding: 0.5em 2em;
+  font-size: 1em;
+  background-color: #3e517a;
+  border: 0;
+  color: white;
+  box-shadow: 6px 6px #2B2F45;
+  transition: 0.5s;
+}
+
+.btn-secondary:hover{
+  background-color: #6570a0;
+  box-shadow: 4px 4px #2B2F45;
 }
 
 .section-1-socials{
@@ -341,11 +357,13 @@ body{
 
 .tag {
   padding: 0.2em 1em;
-  background-color: #303A55;
+  /* background-color: #303A55; */
+  background-color: #373b46;
   margin-right: 0.5em;
   margin-top: 0.5em;
   display: inline-block;
-  box-shadow: 2px 2px #1f165c42;
+  /* box-shadow: 2px 2px #1f165c42; */
+  box-shadow: 2px 2px #423f5842;
 }
 
 .projects-container{

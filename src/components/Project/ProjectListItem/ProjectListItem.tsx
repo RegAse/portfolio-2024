@@ -62,6 +62,12 @@ function ProjectListItem({ project }: ProjectListItemProps) {
                     <div className="project-info">
                         <h2>{project.title}</h2>
                         <p className="project-desc">{project.description}</p>
+
+                        {
+                            (project.link !== "" &&
+                                <a className="btn btn-secondary" href={project.link}>Check out live version</a>
+                            )
+                        }
                         <br></br>
                         <br></br>
                         <br></br>

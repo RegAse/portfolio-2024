@@ -14,6 +14,7 @@ export const data = {
                     course: "GCDD Course",
                     video: "./videos/zen-juggle-preview.mp4",
                     link: "https://gudmunduraxel.itch.io/zen-juggle",
+                    source: "",
                     tags: ["React"],
                 },
                 {
@@ -24,6 +25,7 @@ export const data = {
                     course: "GCDD Course",
                     video: "./videos/morns-preview.mp4",
                     link: "https://gudmunduraxel.itch.io/morns",
+                    source: "",
                     tags: ["React"],
                 },
                 {
@@ -34,6 +36,7 @@ export const data = {
                     course: "Personal Project",
                     video: "./videos/music-preview.mp4",
                     link: "https://gudmundur-music-player-visualizer.netlify.app/",
+                    source: "",
                     tags: ["React"],
                 },
                 {
@@ -44,6 +47,7 @@ export const data = {
                     course: "VEF3B3U",
                     video: "",
                     link: "#",
+                    source: "",
                     tags: ["React"],
                 },
             ],
@@ -91,6 +95,7 @@ export const data = {
                     course: "VEF3B3U",
                     video: "",
                     link: "#",
+                    source: "",
                     tags: ["React"],
                 },
                 {
@@ -101,6 +106,7 @@ export const data = {
                     course: "VEF3A3U",
                     video: "",
                     link: "#",
+                    source: "",
                     tags: ["React"],
                 }
             ],
@@ -134,7 +140,7 @@ export const data = {
         {
             id: 1,
             title: "Music Visualizer",
-            description: "A music visualizer made with React and three.js",
+            description: "A really cool music visualizer I made with React and three.js. I created many different visualizers that give different experiences and you can easily switch between visualizers from the sidebar in real-time. There is also a distraction free mode which will disable the UI so you can enjoy the visuals.",
             cover: "./images/firefox_qB9V85shYV.png",
             course: "Personal Project",
             video: "./videos/music-visualizer-video-1-trim.mp4",
@@ -145,12 +151,13 @@ export const data = {
                 { source: "./images/music-visualizer-1.png" }
             ],
             link: "https://gudmundur-music-player-visualizer-v2.netlify.app/",
+            source: "",
             tags: ["TypeScript", "JavaScript", "React", "Three.js", "React Three Fiber"],
         },
         {
             id: 2,
             title: "Morns",
-            description: "A video game I made with a group in a game development course",
+            description: "Made a game called Morns with my group in a game development course at RU. The game is about astrounauts fighting in space (similar to the game Worms). I was in a lead developer role in this project since I had the most expertise in Unity. For example I implemented the fully destructible world system and created a custom shader for edges on the asteroids to be burned off, also implemented the main player controller and more",
             cover: "./images/Unity_RGfhouoolA.png",
             course: "GCDD Course",
             video: "./videos/morns-preview.mp4",
@@ -159,12 +166,13 @@ export const data = {
                 { source: "./images/Unity_RGfhouoolA.png" }
             ],
             link: "https://gudmunduraxel.itch.io/morns",
-            tags: ["C#", "Unity"],
+            source: "",
+            tags: ["C#", "Unity", "ShaderLab"],
         },
         {
             id: 3,
             title: "AratiJS Javascript Framework",
-            description: "In high school I created a small Javascript framework for a final project in a Web Development Course. It can render data in a similar way React/Angular does.",
+            description: "In high school I created a small Javascript framework for a final project in a Web Development Course. It can render data in a similar way React/Angular does. The framework can handle objects ands lists of objects and render them properly, the templates were implemented directly in the html. I learned a lot about various things in JavaScript with this project.",
             cover: "./images/firefox_vMtvTlRYUm.jpg",
             course: "VEF3B3U",
             video: "",
@@ -173,12 +181,13 @@ export const data = {
                 { source: "./images/firefox_vMtvTlRYUm.jpg" }
             ],
             link: "",
+            source: "https://github.com/RegAse/AratiJS",
             tags: ["JavaScript", "AratiJS"],
         },
         {
             id: 4,
             title: "Zen Juggle",
-            description: "A game I made in a game development course",
+            description: "A solo video game project in a game development course at RU. The main task in this project was creating the effects and making the user feel the impact when the balls bounce of the paddles.",
             cover: "./images/firefox_qmfUGQasR8.png",
             course: "GCDD Course",
             video: "./videos/zen-juggle-preview.mp4",
@@ -187,6 +196,7 @@ export const data = {
                 { source: "./images/rIYElmeL8O.jpg" }
             ],
             link: "https://gudmunduraxel.itch.io/zen-juggle",
+            source: "",
             tags: ["C#", "Unity"],
         },
     ],

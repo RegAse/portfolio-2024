@@ -6,6 +6,7 @@ export interface Project {
     course: string;
     video: string;
     link: string;
+    source: string;
     tags: string[];
     images?: ProjectImage[];
 }

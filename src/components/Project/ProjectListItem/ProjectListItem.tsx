@@ -68,6 +68,11 @@ function ProjectListItem({ project }: ProjectListItemProps) {
                                 <a className="btn btn-secondary" href={project.link}>Check out live version</a>
                             )
                         }
+                        {
+                            (project.source !== "" &&
+                                <a className="btn btn-secondary" href={project.source}>Check out the source</a>
+                            )
+                        }
                         <br></br>
                         <br></br>
                         <br></br>

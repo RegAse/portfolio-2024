@@ -51,7 +51,7 @@ export const data = {
                     tags: ["React"],
                 },
             ],
-            awards: [],
+            awards: [{ id: 0, title: "With emphasis on Computer Game Architecture" }],
             courses: [
                 {id: 0, name: "Tölvuhögun", description: ""},
                 {id: 1, name: "Forritun", description: ""},
@@ -85,7 +85,7 @@ export const data = {
             id: 1,
             title: "Tölvubraut - Tækniskólinn",
             description: "Graduated from Tölvubraut with an achievement of best success in computer classes involving more than 20 computer classes.",
-            tags: ["C#", "Java", "MySQL", "JavaScript", "PHP", "Laravel", "CSS", "LESS", "SCSS", "Unity", "Python", "C++", "WPF", "MVC"],
+            tags: ["C#", "Java", "MySQL", "JavaScript", "PHP", "Laravel", "CSS", "LESS", "SCSS", "Unity", "Python", "C++", "WPF", "MVC", "Angular", ""],
             projects: [
                 {
                     id: 0,
@@ -198,6 +198,21 @@ export const data = {
             link: "https://gudmunduraxel.itch.io/zen-juggle",
             source: "",
             tags: ["C#", "Unity"],
+        },
+        {
+            id: 5,
+            title: "Platformer Game (UE C++)",
+            description: "Created a simple platformer game for a project in Programming with C++ at RU. I implemented a weapon swapping system and focused on learning how to use C++ with Unreal Engine. Since the course was all about C++ I implemented everything through C++ code and did not use the blueprint system. I learned a lot about Unreal Engine while working on this project and really enjoyed working on it.",
+            cover: "./images/ue-game.jpeg",
+            course: "GCDD Course",
+            video: "./videos/ue-game.mp4",
+            images: [
+                { source: "./images/ue-game.jpg" },
+                { source: "./images/rIYElmeL8O.jpg" }
+            ],
+            link: "https://gudmunduraxel.itch.io/platformer-game?secret=YoBO5q3fc1IkvudMhMAm5vYT4",
+            source: "",
+            tags: ["Unreal Engine", "C++"],
         },
     ],
     technologies: [

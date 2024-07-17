@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { data } from "../../data/data";
 import { BsAward, BsFillMortarboardFill } from "react-icons/bs";
 import { Education } from "../../types/Education";
+import { motion} from "framer-motion";
+
 
 interface EducationListItemProps {
     education: Education
@@ -17,7 +19,7 @@ function EducationListItem({ education }: EducationListItemProps) {
 
     return (
         <React.Fragment>
-                <div className="col-md-6 mb-5">
+                <motion.div whileInView={{opacity: 1, left: 0}} transition={{duration: 1}} className="col-md-6 mb-5 education-list-container">
                     <div className="education">
                         <div className="education-content">
                             <h3><BsFillMortarboardFill className="education-icon" /> {education.title}</h3>
@@ -60,7 +62,7 @@ function EducationListItem({ education }: EducationListItemProps) {
                             </table>
                         </div>
                     </div>
-                </div>
+                </motion.div>
         </React.Fragment>
     );
 }

@@ -79,6 +79,7 @@ a{
 }
 .project-container{
   position: relative;
+
   padding: 0;
 }
 
@@ -276,6 +277,9 @@ body{
   /* transition: background-image 300ms ease-in 200ms; */
   /* background-position: center; */
 }
+*{
+  scrollbar-width: thin;
+}
 
 /* h1{
   font-size: 4em;
@@ -358,7 +362,9 @@ body{
 .tag {
   padding: 0.2em 1em;
   /* background-color: #303A55; */
-  background-color: #373b46;
+  /* background-color: #373b46; */
+  font-size: 1.1em;
+  background-color: #4f6849;
   margin-right: 0.5em;
   margin-top: 0.5em;
   display: inline-block;
@@ -368,6 +374,11 @@ body{
 
 .projects-container{
   margin-top: 10em;
+  opacity: 0;
+}
+
+.education-container{
+  opacity: 0;
 }
 
 @media (max-width: 767.98px) {

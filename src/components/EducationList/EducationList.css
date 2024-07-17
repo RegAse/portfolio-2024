@@ -53,3 +53,9 @@
     background-color: black;
     font-size: 0.8em;
 }
+
+.education-list-container{
+    position: relative;
+    left: 100px;
+    opacity: 0;
+  }

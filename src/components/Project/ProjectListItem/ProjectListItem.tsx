@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { BsAward, BsChevronLeft, BsChevronRight, BsCircle, BsCircleFill, BsFillMortarboardFill } from "react-icons/bs";
 import { Project, ProjectImage } from "../../../types/Education";
+import { motion} from "framer-motion";
 
 interface ProjectListItemProps {
     project: Project
@@ -33,16 +34,30 @@ function ProjectListItem({ project }: ProjectListItemProps) {
 
     return (
         <React.Fragment>
-            <div className="col-md-5 offset-md-1">
-                <div className="project">
+            <motion.div 
+                // whileHover={{boxShadow: "0px 0px 10px rgba(122, 122, 122, 0.1)"}}
+                whileInView={{opacity: 1, top: 0}} 
+                transition={{ ease: "easeInOut", duration: 1}} 
+                viewport={{ once: true, amount: 0.5 }} 
+                className="project-card">
+                <div className="row g-0">
                     {(project.images) &&
                         <>
                             {/* <img className="img-fluid" src={project.images[currentImageIndex].source} alt="Failed loading" /> */}
-                            <div className="project-cover d-flex justify-content-between align-items-center fadein" style={{ backgroundImage: "url(" + project.images[currentImageIndex].source + ")" }}>
-                                <video className="project-video"  autoPlay muted loop>
+                            <div
+                                className="col-md-7 project-cover d-flex justify-content-between align-items-center" 
+                                // style={{ backgroundImage: "url(" + project.images[currentImageIndex].source + ")" }}>
+                                >
+                               {/* Video */}
+                               {(project.video === "") &&
+                                <img className="img-fluid" src={project.images[currentImageIndex].source} alt="Failed loading" />
+                               }
+                               {(project.video !== "") &&
+                               <video className="project-video" autoPlay muted loop>
                                     <source src={project.video} type="video/mp4"/>
                                     Your browser does not support the video tag.
                                 </video>
+                                }
                                 {/* <button className="btn btn-slide" onClick={previousImage}>
                                     <BsChevronLeft className="fs-1" />
                                 </button>
@@ -59,8 +74,8 @@ function ProjectListItem({ project }: ProjectListItemProps) {
                         </>
                     }
                     {/* <div className="project-cover" style={{ backgroundImage: "url(" + project.cover + ")" }}></div> */}
-                    <div className="project-info">
-                        <h2>{project.title}</h2>
+                    <div className="col-md-5 project-info">
+                        <h2 className="project-title">{project.title}</h2>
                         <p className="project-desc">{project.description}</p>
 
                         {
@@ -77,13 +92,15 @@ function ProjectListItem({ project }: ProjectListItemProps) {
                         <br></br>
                         <br></br>
                         <br></br>
-
-                        {project.tags.map((t, index) => (
-                            <span key={index} className="tag">{t}</span>
-                        ))}
+                        <div className="project-tags-container">
+                            <h6 className="project-tags-title">Tech Used</h6>
+                            {project.tags.map((t, index) => (
+                                <span key={index} className="tag">{t}</span>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </React.Fragment>
     );
 }

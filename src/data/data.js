@@ -85,7 +85,7 @@ export const data = {
             id: 1,
             title: "Tölvubraut - Tækniskólinn",
             description: "Graduated from Tölvubraut with an achievement of best success in computer classes involving more than 20 computer classes.",
-            tags: ["C#", "Java", "MySQL", "JavaScript", "PHP", "Laravel", "CSS", "LESS", "SCSS", "Unity", "Python", "C++", "WPF", "MVC", "Angular", ""],
+            tags: ["C#", "Java", "MySQL", "JavaScript", "PHP", "Laravel", "CSS", "LESS", "SCSS", "Unity", "Python", "C++", "WPF", "MVC", "Angular"],
             projects: [
                 {
                     id: 0,
@@ -140,10 +140,10 @@ export const data = {
         {
             id: 1,
             title: "Music Visualizer",
-            description: "A really cool music visualizer I made with React and three.js. I created many different visualizers that give different experiences and you can easily switch between visualizers from the sidebar in real-time. There is also a distraction free mode which will disable the UI so you can enjoy the visuals.",
+            description: "A music visualizer I made with React and three.js. I created many different visualizers that give different experiences and you can easily switch between visualizers from the sidebar in real-time. There is also a distraction free mode which will disable the UI so you can enjoy the visuals.",
             cover: "./images/firefox_qB9V85shYV.png",
             course: "Personal Project",
-            video: "./videos/music-visualizer-video-1-trim.mp4",
+            video: "./videos/music-vis-preview.mp4",
             images: [
                 { source: "./images/music-visualizer-3.png" },
                 { source: "./images/music-visualizer-2.png" },

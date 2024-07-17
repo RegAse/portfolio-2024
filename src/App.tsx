@@ -6,6 +6,8 @@ import EducationDiagramList from "./components/EducationDiagramList/EducationDia
 import ProjectList from "./components/Project/ProjectList/ProjectList";
 import EducationList from "./components/EducationList/EducationList";
 import ProjectDisplay from "./components/Project/ProjectDisplay/ProjectDisplay";
+import { motion} from "framer-motion";
+
 
 function App() {
 	const bg = "../images/firefox_qmfUGQasR8.png";
@@ -58,8 +60,16 @@ function App() {
 				</div>
 			</div>
 
+			{/* Projects Section */}
+			<motion.div ref={projectsRef} whileInView={{opacity: 1}} transition={{duration: 1}} className="container projects-container">
+				<h2 className="text-center">Projects</h2>
+				<p className="projects-desc text-center">Explore the array of projects I have worked on, both
+				<br/>as part of my academic curriculum and personal endeavors.</p>
+				<ProjectList></ProjectList>
+			</motion.div>
+
 			{/* Education Section */}
-			<div ref={educationRef} className="container education-container">
+			<motion.div ref={educationRef} whileInView={{opacity: 1}} transition={{duration: 1}} className="container education-container">
 				<h2 className="text-center">Education</h2>
 				<p className="projects-desc text-center">
 					Discover the diverse educational background I have 
@@ -67,15 +77,7 @@ function App() {
 					acquired from academic institutions and personal study.
 				</p>
 				<EducationList></EducationList>
-			</div>
-
-			{/* Projects Section */}
-			<div ref={projectsRef} className="container projects-container">
-				<h2 className="text-center">Projects</h2>
-				<p className="projects-desc text-center">Explore the array of projects I have worked on, both
-				<br/>as part of my academic curriculum and personal endeavors.</p>
-				<ProjectList></ProjectList>
-			</div>
+			</motion.div>
 
 			<div>
 				{/* <ProjectDisplay></ProjectDisplay> */}

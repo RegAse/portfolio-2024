@@ -15,12 +15,13 @@
     /* min-height: 220px; */
     opacity: 0;
     top: 100px;
-    transition: box-shadow 2s;
+    transition: box-shadow, scale 0.4s;
 }
 
 .project-card:hover{
     /* cursor: pointer; */
     box-shadow: 0px 0px 10px rgba(122, 122, 122, 0.1);
+    scale: 1.01;
 }
 
 .project-cover {
